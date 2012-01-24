@@ -6,7 +6,7 @@ module Handlebars
   class TemplateHandler
 
     def self.js
-      handlebars = File.join(Rails.root, "vendor", "javascripts", "handlebars.js")
+      handlebars = File.join(Rails.root, "vendor", "assets", "javascripts", "handlebars.js")
 
       unless File.exists?(handlebars)
         raise "Could not find handlebars.js. Please copy it to #{handlebars}"
