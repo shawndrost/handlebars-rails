@@ -1,6 +1,9 @@
 require 'handlebars-rails/version'
 require 'handlebars-rails/v8'
+require 'handlebars-rails/asset_helper'
 require "active_support"
+
+ActionView::Base.send :include, Handlebars::AssetHelper
 
 module Handlebars
   class TemplateHandler
